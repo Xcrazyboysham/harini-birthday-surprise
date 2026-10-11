@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ff5d9e">
+<title>Happy Birthday Harini Akka ❤️</title>
+<style>
+:root{--pink:#ff5d9e;--deep:#6d1748;--cream:#fff7fb;--gold:#ffd875}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Tamil",sans-serif;color:#fff;background:radial-gradient(circle at 20% 10%,#7b246c 0,#2a123d 42%,#100e2b 100%);min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:34px 34px}
+main{width:min(960px,100%);margin:auto;padding:24px 16px 60px;position:relative;z-index:1}
+.hero{text-align:center;padding:28px 12px 18px}
+.eyebrow{letter-spacing:3px;text-transform:uppercase;font-size:.78rem;color:#ffd6e8}
+h1{font-size:clamp(2.5rem,10vw,5.5rem);line-height:1.02;margin:12px 0;color:#fff;text-shadow:0 0 28px #ff5d9e88}
+h1 span{display:block;color:#ff9fc5}
+.subtitle{font-size:1.08rem;line-height:1.8;color:#ffeaf3;max-width:620px;margin:16px auto}
+.panel{background:#ffffff12;border:1px solid #ffffff2c;backdrop-filter:blur(12px);border-radius:26px;padding:22px;margin:18px 0;box-shadow:0 16px 50px #0002}
+.gift-wrap{display:grid;place-items:center;min-height:250px}
+.gift{font-size:100px;cursor:pointer;filter:drop-shadow(0 12px 18px #ff4d9e55);animation:bob 1.8s ease-in-out infinite;transition:transform .4s}
+.gift:hover{transform:scale(1.08) rotate(-4deg)}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -12px}}
+button{border:0;border-radius:999px;padding:14px 22px;font-weight:800;font-size:1rem;cursor:pointer;background:linear-gradient(110deg,#ff78ad,#ffd875);color:#511238;box-shadow:0 8px 25px #ff5d9e33}
+button:focus-visible,input:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.hint{color:#ffd6e8;text-align:center;margin-top:6px}
+.hidden{display:none!important}
+.message{font-size:1.05rem;line-height:2;color:#fff3f8;white-space:pre-line}
+.message strong{color:#ffd875}
+.section-title{text-align:center;font-size:clamp(1.5rem,5vw,2.3rem);margin:4px 0 14px}
+.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.photo-slot{min-height:180px;border:2px dashed #ffb5d4aa;border-radius:18px;display:grid;place-items:center;text-align:center;padding:12px;background:#ffffff09;overflow:hidden;color:#ffd9e8}
+.photo-slot img{width:100%;height:100%;min-height:210px;max-height:360px;object-fit:cover;border-radius:14px}
+.photo-slot label{cursor:pointer;display:block;width:100%}
+.photo-slot input{display:block;width:100%;margin-top:12px;font-size:.8rem}
+.photo-slot .emoji{font-size:2.5rem;display:block}
+.photo-note{font-size:.86rem;color:#ffd9e8;line-height:1.6}
+.cake-area{text-align:center;padding:8px}
+.cake{font-size:100px;display:inline-block;animation:cakeGlow 2s infinite alternate}
+@keyframes cakeGlow{from{filter:drop-shadow(0 0 4px #ff88b7)}to{filter:drop-shadow(0 0 26px #ffd875)}}
+.wish{font-size:1.05rem;line-height:1.9;text-align:center;color:#fff0f7}
+.signature{font-size:1.2rem;color:#ffd875;font-weight:800;text-align:center}
+footer{text-align:center;color:#ffc9df;font-size:.85rem;padding:20px}
+.heart{position:fixed;bottom:-30px;z-index:5;pointer-events:none;animation:floatUp linear forwards}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(360deg);opacity:0}}
+.confetti{position:fixed;top:-12px;width:9px;height:13px;z-index:10;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(700deg);opacity:.3}}
+#musicStatus{font-size:.85rem;color:#ffe0ed;margin-top:12px}
+@media(max-width:540px){main{padding:14px 12px 38px}.panel{padding:17px;border-radius:21px}.photo-grid{grid-template-columns:1fr}.photo-slot{min-height:160px}.gift{font-size:84px}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="eyebrow">A little surprise made with lots of love</div>
+    <h1>Happy Birthday <span>Harini Akka ❤️</span></h1>
+    <p class="subtitle">Un sirippu eppovum ippadiye irukkanum… unakku indha chinna surprise, en anbu niranja manasula irundhu! 🎂</p>
+  </header>
+
+  <section class="panel" id="giftPanel">
+    <h2 class="section-title">🎁 Unakkaga oru surprise!</h2>
+    <div class="gift-wrap">
+      <div>
+        <div class="gift" id="gift" role="button" tabindex="0" aria-label="Open birthday gift">🎁</div>
+        <p class="hint">Gift-a touch pannu, Akka! 💗</p>
+      </div>
+    </div>
+    <div style="text-align:center"><button id="openBtn">Open Your Surprise ✨</button></div>
+  </section>
+
+  <section class="panel hidden" id="letterPanel">
+    <h2 class="section-title">💌 En chella Akkakku…</h2>
+    <div class="message">Harini Akka, ❤️
+
+En life-la nee akka mattum illa… enakku oru friend, guide, support ellame nee dhaan. Namma sandhoshama siricha moments-um, chinna chinna sandaigalum, pesi siricha nerangalum enakku romba special.
+
+Eppovum nee happy-ah irukkanum. Un kanavugal ellam nijamaaganum. Unakku nalla health, neraya success, unlimited happiness kidaikkanum. Nee kashtapadumbodhu un pakkathula naan iruppen; nee sandhoshama irukkumbodhu un kooda serndhu naanum celebrate pannuven.
+
+<strong>Indha ulagathula enakku kidaicha azhagana gift — nee en akka-va irukkuradhu dhaan.</strong> 🫂
+
+Un birthday unakku mattum illa, unna nesikkura ellarukkum oru special day. Innaikku mattum illa, ovvoru naalum nee special dhaan.
+
+<strong>Happy Birthday, Harini Akka! Love you loads! ❤️🎂</strong></div>
+    <p class="signature">— Un anbu thambi / thangachi 💖</p>
+  </section>
+
+  <section class="panel">
+    <h2 class="section-title">📸 Namma memories</h2>
+    <p class="photo-note">Ungal photos-ai inga select pannunga. Photos indha browser-la mattum preview aagum; website-ku automatic-ah upload aagadhu. Public link-la photos kaattanumna, photos-ai website folder-la add panni index.html-oda pakkathula vaikkavum (instructions ZIP-oda README-la irukku).</p>
+    <div class="photo-grid">
+      <div class="photo-slot" id="slot1"><label><span class="emoji">🫂</span><strong>Akka & Me</strong><br><span class="photo-note">First photo select pannu</span><input type="file" accept="image/*" data-slot="slot1"></label></div>
+      <div class="photo-slot" id="slot2"><label><span class="emoji">🌸</span><strong>My Favourite Memory</strong><br><span class="photo-note">Second photo select pannu</span><input type="file" accept="image/*" data-slot="slot2"></label></div>
+    </div>
+  </section>
+
+  <section class="panel cake-area">
+    <h2 class="section-title">🎂 Make a birthday wish!</h2>
+    <div class="cake">🎂</div>
+    <p class="wish">Harini Akka, un life full-ah love, laughter, peace, success, and beautiful memories nirainjirukkanum. ✨<br>Un wishes ellam seekiram niraiverattum!</p>
+    <button id="celebrateBtn">Celebrate! 🎉</button>
+    <div id="musicStatus">🎵 Birthday music venumna, phone-la unakku pidicha song play pannikko.</div>
+  </section>
+  <footer>Made with ❤️ specially for Harini Akka</footer>
+</main>
+<script>
+const gift = document.getElementById('gift');
+const openBtn = document.getElementById('openBtn');
+const letterPanel = document.getElementById('letterPanel');
+let opened = false;
+function openGift(){
+  if(opened) return;
+  opened = true;
+  gift.textContent = '💝';
+  gift.style.animation = 'none';
+  document.getElementById('giftPanel').classList.add('hidden');
+  letterPanel.classList.remove('hidden');
+  letterPanel.scrollIntoView({behavior:'smooth',block:'start'});
+  burstHearts(28); confetti(90);
+}
+gift.addEventListener('click',openGift);
+gift.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openGift();}});
+openBtn.addEventListener('click',openGift);
+function burstHearts(n=18){
+  const emojis=['💗','💖','💕','❤️','💘','✨'];
+  for(let i=0;i<n;i++){
+    const el=document.createElement('span');el.className='heart';el.textContent=emojis[Math.floor(Math.random()*emojis.length)];
+    el.style.left=Math.random()*100+'vw';el.style.fontSize=(18+Math.random()*24)+'px';el.style.animationDuration=(3+Math.random()*4)+'s';
+    document.body.appendChild(el);setTimeout(()=>el.remove(),7500);
+  }
+}
+function confetti(n=65){
+  for(let i=0;i<n;i++){
+    const el=document.createElement('i');el.className='confetti';el.style.left=Math.random()*100+'vw';
+    el.style.background=['#ff79ae','#ffd875','#b9a2ff','#fff'][Math.floor(Math.random()*4)];
+    el.style.animationDuration=(2.5+Math.random()*3)+'s';el.style.animationDelay=Math.random()*1.3+'s';
+    document.body.appendChild(el);setTimeout(()=>el.remove(),6500);
+  }
+}
+document.getElementById('celebrateBtn').addEventListener('click',()=>{burstHearts(35);confetti(120);});
+document.querySelectorAll('input[type=file][data-slot]').forEach(input=>{
+  input.addEventListener('change',()=>{
+    const file=input.files && input.files[0]; if(!file)return;
+    if(!file.type.startsWith('image/'))return;
+    const url=URL.createObjectURL(file), slot=document.getElementById(input.dataset.slot);
+    slot.innerHTML='';
+    const img=document.createElement('img');img.src=url;img.alt='Selected birthday memory photo';slot.appendChild(img);
+  });
+});
+</script>
+</body>
+</html>
